@@ -16,7 +16,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: travel-backend
+    container_name: mqtt-eventdriven-app
     environment:
       - PORT=3000
     ports:
@@ -30,7 +30,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     restart: always
-    container_name: travel-pgadmin4
+    container_name: pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=pgadmin4
